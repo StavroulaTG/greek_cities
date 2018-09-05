@@ -1,4 +1,4 @@
-# GreekIslands
+# Greek Islands
 This Ruby Gem provides a CLI to view the 20 BEST GREEK ISLANDS as per the Condé Nast Traveller sponsored website.
 
 ## Installation
