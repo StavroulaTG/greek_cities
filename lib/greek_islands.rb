@@ -1,5 +1,4 @@
-require "greek_islands/version"
+require_relative "./greek_islands/version"
+require_relative './greek_islands/cli'
 
-module GreekIslands
-  # Your code goes here...
-end
+

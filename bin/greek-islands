@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require './lib/greek_islands'
+
+GreekIslands::CLI.new.call
+
