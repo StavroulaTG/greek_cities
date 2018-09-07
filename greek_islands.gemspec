@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Stavroula Guerrero'"]
   spec.email         = ["'4stacyg@optonline.net'"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = " Best Greek Islands to visit"
+  spec.description   = " Provides details on the Conde Nast Traveller 20 Best Greek Islands"
+  spec.homepage      = "https://github.com/StavroulaTG/greek_islands.git"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
