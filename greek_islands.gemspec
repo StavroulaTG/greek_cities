@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "greek_islands"
   spec.version       = GreekIslands::VERSION
   spec.authors       = ["'Stavroula Guerrero'"]
-  spec.email         = ["'4stacyg@optonline.net'"]
+  spec.email         = ["'stavroulatg@gmail.com'"]
 
   spec.summary       = " Best Greek Islands to visit"
   spec.description   = " Provides details on the Conde Nast Traveller 20 Best Greek Islands"
