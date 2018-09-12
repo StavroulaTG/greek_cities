@@ -1,18 +1,26 @@
 class GreekIslands::Islands 
   attr_accessor :name, :stay
   
-  def self.all
-    
-    island_1 = self.new 
-    island_1.name = "Hydra"
-    island_1.stay = "Orloff Boutique Hotel"
-    
-    island_2 = self.new 
-    island_2.name = "Corfu"
-    island_2.stay = "Rou Estate"
-    
-    [island_1, island_2]
+  def self.all 
+    self.scrape_islands
   end
   
+  def self.scrape_islands
+    islands = []
+    
+    islands << self.scrape_cntraveller
+    
+    islands
+  end
+  
+  def self.scrape_cntraveller
+    doc = Nokogiri::HTML(open("https://www.cntraveller.com/gallery/best-greek-islands-beaches"))
+    
+    island = self.new
+    island.name = doc.search("h1.a-header__title").text
+    island.stay = doc.search("strong.bb-strong").text
+    
+    island
+  end
 end
     
