@@ -1,5 +1,5 @@
 class GreekCities::Cities 
-  attr_accessor :name, :population, :url
+  attr_accessor :name, :population, :url, :city
   
   def self.all 
     self.scrape_cities
@@ -30,11 +30,8 @@ class GreekCities::Cities
       url = Nokogiri::HTML(open("https://population.mongabay.com/population/greece"))
       
       #binding.pry  
-    
     end
-
-    city
+      city
   end
-
 end
     

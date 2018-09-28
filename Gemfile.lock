@@ -23,7 +23,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.16)
-  greek_islands!
+  greek_cities!
   rake (~> 10.0)
 
 BUNDLED WITH

@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require './lib/greek_islands'
+require './lib/greek_cities'
 
-GreeksCities::CLI.new.call
+GreekCities::CLI.new.call
 
