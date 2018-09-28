@@ -1,3 +1,3 @@
-module GreekIslands
+module GreekCities
   VERSION = "0.1.0"
 end

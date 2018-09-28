@@ -2,5 +2,5 @@
 
 require './lib/greek_islands'
 
-GreekIslands::CLI.new.call
+GreeksCities::CLI.new.call
 

@@ -1,16 +1,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "greek_islands/version"
+require "greek_cities/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "greek_islands"
-  spec.version       = GreekIslands::VERSION
+  spec.name          = "greek_cities"
+  spec.version       = GreekCities::VERSION
   spec.authors       = ["'Stavroula Guerrero'"]
   spec.email         = ["'stavroulatg@gmail.com'"]
 
-  spec.summary       = " Best Greek Islands to visit"
-  spec.description   = " Provides details on the Conde Nast Traveller 20 Best Greek Islands"
+  spec.summary       = " Largest Cities in Greece"
+  spec.description   = " Provides details on the MongaBay Largest Cities in Greece"
   spec.homepage      = "https://github.com/StavroulaTG/greek_islands.git"
   spec.license       = "MIT"
 
