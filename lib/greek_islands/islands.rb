@@ -16,12 +16,17 @@ class GreekIslands::Islands
   
   def self.scrape_cntraveller
     
-    doc = Nokogiri::HTML(open("https://www.cntraveller.com/gallery/best-greek-islands-beaches"))
+    #doc = Nokogiri::HTML(open("https://www.cntraveller.com/gallery/best-greek-islands-beaches"))
+    doc = Nokogiri::HTML(open("https://population.mongabay.com/population/greece"))
     
-    island = self.new
     
-    island.name = doc.css("div.c-figure__title").text
-    island.stay = doc.css("strong.bb-strong css selector").text
+    rows = doc.css("tr")
+    rows.each do |row|
+      island = self.new
+      island.name = row.children[0].children[0].children.text
+      binding.pry  
+    
+    end
 
     island
   end
