@@ -21,7 +21,8 @@ class GreekCities::Cities
     
       
     rows = doc.css("tr")
-    rows.each_with_index do |row, i|
+    rows.each do |row| 
+    
       
       city = self.new
       
@@ -29,7 +30,7 @@ class GreekCities::Cities
       city.population = row.children[1].children[0].text
       url = Nokogiri::HTML(open("https://population.mongabay.com/population/greece"))
       
-      #binding.pry  
+      binding.pry  
     end
       city
   end
