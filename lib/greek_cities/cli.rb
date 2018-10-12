@@ -8,7 +8,7 @@ class GreekCities::CLI
   
   def list_cities
      puts "Largest Cities in Greece:"
-     @cities = GreekCities::Cities.all
+     @cities = GreekCities::City.all
      @cities.each.with_index(1) do |city, i|
        puts "#{i}. #{city.name} - #{city.population}"
      end
