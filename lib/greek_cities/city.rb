@@ -29,10 +29,10 @@ class GreekCities::City
         city.name = row.children.children.children.text
         city.population = row.children[1].children[0].text
         city.url = row.children.children.first.attributes['href'].value
-     
+    
     end
     binding.pry 
       city
   end
 end
-    
+  
