@@ -11,14 +11,14 @@ class GreekCities::City
     @@cities
   end
   
-  def self.scrape_cities
-    cities = []
+  #def self.scrape_cities
+    #cities = []
     
-    cities << self.scrape_populationmongabay
+  #cities << self.scrape_populationmongabay
    
-    cities
+  #cities
     
-  end
+  #end
   
   def self.scrape_populationmongabay
     
@@ -29,10 +29,9 @@ class GreekCities::City
         city.name = row.children.children.children.text
         city.population = row.children[1].children[0].text
         city.url = row.children.children.first.attributes['href'].value
-    
+        
     end
-    binding.pry 
-      city
+    #binding.pry
   end
 end
   
