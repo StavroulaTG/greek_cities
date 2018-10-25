@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require './lib/greek_cities'
+require 'colorize'
 
 GreekCities::CLI.new.call
 

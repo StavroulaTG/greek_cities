@@ -12,7 +12,7 @@ class GreekCities::CLI
     puts "The Largest Cities in Greece:"
     puts ''
     GreekCities::City.all.each.with_index(1) do |city, i|
-      puts "#{i}. #{city.name}"
+      puts "#{i}.".colorize(:white) + "#{city.name}".colorize(:blue)
     
      end
    end
@@ -32,7 +32,7 @@ class GreekCities::CLI
       if input.to_i > 0 
         the_city = GreekCities::City.all[input.to_i-1]
         puts ''
-        puts "#{the_city.name} - population: #{the_city.population}"
+        puts "#{the_city.name}".colorize(:blue) + " - ".colorize(:white) + "population:".colorize(:yellow) + " #{the_city.population}".colorize(:red)
         puts ''
       elsif input == "list"
         list_cities
@@ -43,7 +43,7 @@ class GreekCities::CLI
 
   def goodbye
     puts ''
-    puts "Thank you for visiting the Greek Cities!!!"
+    puts "Thank you for visiting the ".colorize(:white) + "Greek Cities!!!".colorize(:blue)
     puts ''
   end
 end
