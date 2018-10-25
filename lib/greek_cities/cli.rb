@@ -13,7 +13,7 @@ class GreekCities::CLI
     puts ''
     GreekCities::City.all.each.with_index(1) do |city, i|
       puts "#{i}. #{city.name}"
-      puts ''
+    
      end
    end
   
@@ -22,13 +22,9 @@ class GreekCities::CLI
     while input != "exit"
    puts ''
       puts  "      Enter the number of the city you'd like more info on 
-      
                             OR
-                          
               type list to see the cities again
-      
                             OR
-                            
                         type exit:"
       puts ''
       input = gets.strip.downcase
@@ -36,7 +32,7 @@ class GreekCities::CLI
       if input.to_i > 0 
         the_city = GreekCities::City.all[input.to_i-1]
         puts ''
-        puts "#{the_city.name} - #{the_city.population}"
+        puts "#{the_city.name} - population: #{the_city.population}"
         puts ''
       elsif input == "list"
         list_cities
