@@ -20,7 +20,7 @@ class GreekCities::City
       city_rows.each do |row|
 
         city = GreekCities::City.new
-        city.name = row.children.children.children.text
+        city.name = row.children[0].text
         city.population = row.children[2].text
 
     end
