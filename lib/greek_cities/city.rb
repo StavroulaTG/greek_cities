@@ -15,7 +15,7 @@ class GreekCities::City
 
       doc = Nokogiri::HTML(open("https://population.mongabay.com/population/greece"))
 
-      city_rows = doc.css("tr")
+      city_rows = doc.css("tr").drop(1)
 
       city_rows.each do |row|
 
