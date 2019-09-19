@@ -32,7 +32,7 @@ class GreekCities::CLI
       if input.to_i > 0
         the_city = GreekCities::City.all[input.to_i-1]
         puts ''
-        puts "#{the_city.name}".colorize(:blue) + " - ".colorize(:white) + "Population:".colorize(:yellow) + " #{the_city.population}".colorize(:red)
+        puts "#{the_city.name}".colorize(:blue) + " - ".colorize(:white) + "Population:".colorize(:yellow) + "#{the_city.population}".colorize(:red) + "  Last update: ".colorize(:yellow) + "#{the_city.last_update}".colorize(:red)
         puts ''
       elsif input == "list"
         list_cities

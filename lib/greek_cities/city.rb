@@ -1,5 +1,5 @@
 class GreekCities::City
-  attr_accessor :name, :population
+  attr_accessor :name, :population, :last_update
 
   @@cities = []
 
@@ -22,6 +22,7 @@ class GreekCities::City
         city = GreekCities::City.new
         city.name = row.children[0].text
         city.population = row.children[2].text
+        city.last_update = row.children[3].text
 
     end
   end
