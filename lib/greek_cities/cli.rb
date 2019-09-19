@@ -25,7 +25,7 @@ class GreekCities::CLI
                           OR
               Type list to see the cities again
                            OR
-                        Type exit:".colorize(:green)
+                        Type exit".colorize(:green)
       puts ''
       input = gets.strip.downcase
 
