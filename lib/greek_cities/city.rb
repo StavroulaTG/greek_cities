@@ -17,7 +17,7 @@ class GreekCities::City
 
       city_rows = doc.css("tr").drop(1)
 
-      city_rows.each do |row|
+      city_rows[0...130].each do |row|
 
         city = GreekCities::City.new
         city.name = row.children[0].text
